@@ -14,5 +14,6 @@ namespace DataAccessLayer.Abstract
         void Update(T p); //güncelleme için kullanılacak method.
         void Delete(T p); //silme için kullanılacak method.               
         List<T> List(Expression<Func<T, bool>> filter);  //filtreleme(şartlı liste) için kullanılacak method.
+        T Get(Expression<Func<T, bool>> filter); //Bu kısımda id'ye göre listeleme işlemi.
     }
 }

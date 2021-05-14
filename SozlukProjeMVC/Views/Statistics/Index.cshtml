@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<br />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
+
+<body class="bg-default">
+    <div class="main-content">
+        <div class="header bg-gradient-primary pb-xl-3 pt-5 pt-md-8">
+            <div class="container-fluid">
+                <center><h2 class="mb-5 text-white">İSTATİSTİKLER</h2></center>
+                <div class="header-body">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Toplam Kategori Sayısı</h5>
+                                            <span class="h2 font-weight-bold mb-0">300</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape bg-gradient-blue">
+                                                <i class="fas fa-object-group"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2"><i class="fa fa-arrow-alt-circle-right"></i> @ViewBag.v1 tane kategori var.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Yazılım Toplam Başlık Sayısı </h5>
+                                            <span class="h2 font-weight-bold mb-0">2,356</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape bg-fuchsia">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-danger mr-2"><i class="fas fa-arrow-alt-circle-right"></i> @ViewBag.v2 tane yazılım başlığı var.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">İçinde 'A' Harfi Geçen Yazar Sayısı</h5>
+                                            <span class="h2 font-weight-bold mb-0">924</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-warning mr-2"><i class="fas fa-arrow-alt-circle-right"></i> @ViewBag.v3 tane yazar isminde var.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">Aktif-Pasif Kategori Farkı</h5>
+                                            <span class="h2 font-weight-bold mb-0">49,65%</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                                                <i class="fas fa-percent"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2"><i class="fas fa-arrow-alt-circle-right"></i> @ViewBag.v4 toplam fark.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-xl-3 col-lg-6">
+                            <br />
+                            <div class="card card-stats mb-4 mb-xl-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title text-uppercase text-muted mb-0">En Fazla Başlık Olan Kategori</h5>
+                                            <span class="h2 font-weight-bold mb-0">49,65%</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape bg-gradient-success">
+                                                <i class="fas fa-tv"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 mb-0 text-muted text-sm">
+                                        <span class="text-success mr-2"><i class="fas fa-arrow-alt-circle-right"></i> @ViewBag.v5</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+    </div>
+    
+</body>

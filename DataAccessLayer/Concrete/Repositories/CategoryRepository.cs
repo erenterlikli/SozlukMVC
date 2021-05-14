@@ -23,6 +23,11 @@ namespace DataAccessLayer.Concrete.Repositories
             c.SaveChanges();  //Ado.net deki karşılığı ExecuteNonQuery() dir.
         }
 
+        public Category Get(Expression<Func<Category, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter); //SingleOrDefault: Dizi ve listelerde tek bir değeri döndürür.
+        }
+
         public void Insert(Category p)
         {
             _object.Add(p);

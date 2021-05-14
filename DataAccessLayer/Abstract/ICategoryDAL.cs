@@ -17,7 +17,7 @@ namespace DataAccessLayer.Abstract
         void Insert(Category p); //ekleme, yani insert işlemi için yazılan bir method.
         void Update(Category p); //güncelleme, yani update işlemi için yazılan bir method.
         void Delete(Category p); //silme, yani delete işlemi için yazılan bir method.
-
+        Category Get(Expression<Func<Category, bool>> filter); //Bu kısımda id'ye göre listeleme işlemi. 
         List<Category> List(Expression<Func<Category, bool>> filter);  //filtreleme(şartlı liste) için kullanılacak method.
     }
 }
